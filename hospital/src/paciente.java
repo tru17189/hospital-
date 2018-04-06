@@ -25,15 +25,6 @@ public class paciente {
        text.close();
        System.out.print(out); 
      }
-     pacientes_orden[] orders1 = new pacientes_orden[100];
-      PriorityQueue<pacientes_orden> priorityQueue = new PriorityQueue<pacientes_orden>(){
-      public int compare(pacientes_orden orderA, pacientrs_orden orderB){
-                if(orderA.getPriority() < orderB.getPriority())
-                return -1;
-                else if(orderA.getPriority() > orderB.getPriority())
-                return 1;
-                else
-                return 0;
+     pacientes_orden[] pacientes_orden = new pacientes_orden[100];
+    VectorHeap<pacientes_orden> priorityQueue = new VectorHeap<pacientes_orden>();
             }
-      }
-}

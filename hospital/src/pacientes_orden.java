@@ -1,5 +1,8 @@
-
+import java.io.*;
+import java.util.PriorityQueue;
 import java.util.Comparator;
+import java.util.*;
+
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -10,8 +13,7 @@ import java.util.Comparator;
 /**
  *
  * @author ottoalexander
- */
-public class pacientes_orden extends VectorHeap {   
+ */public class pacientes_orden implements Comparable {   
     private String Nombre;
     private String apellido;
     private String lesion;
@@ -59,5 +61,14 @@ public class pacientes_orden extends VectorHeap {
     }
     public void setPriority(int priority) {
         this.priority = priority;
+    }
+
+    public int compare(Object o1, Object o2) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
