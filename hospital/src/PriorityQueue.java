@@ -8,6 +8,9 @@ public interface PriorityQueue<E extends Comparable>
 	// pre: !isEmpty()
 	// post: returns and removes minimum value from queue
 	
+        /*
+        @param value
+        */
 	public void add(E value);
 	// pre: value is non-null comparable
 	// post: value is added to priority queue

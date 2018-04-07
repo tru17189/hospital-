@@ -13,6 +13,7 @@ import java.util.*;
 /**
  *
  * @author ottoalexander
+ * 
  */public class pacientes_orden implements Comparable {   
     private String Nombre;
     private String apellido;

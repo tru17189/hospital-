@@ -9,22 +9,30 @@ import java.util.Comparator;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
- * @author ottoalexander
+ * @author ottoalexander 
+ *          Andres Quan
  */
 public class paciente {
-     public static void main(String[] args) throws IOException{
-      String out="";
-      BufferedReader text = new BufferedReader(new FileReader("pacientes.txt"));
-      String str;
-      while ((str = text.readLine()) != null){
-          out+=str+"\n";
-      }
-       text.close();
-       System.out.print(out); 
-     }
-     pacientes_orden[] pacientes_orden = new pacientes_orden[100];
+
+    public static void main(String[] args) throws IOException {
+        String out = "";
+        BufferedReader text = new BufferedReader(new FileReader("pacientes.txt"));
+        String str;
+        while ((str = text.readLine()) != null) {
+            out += str + "\n";
+        }
+        text.close();
+        System.out.print(out);
+    }
+    pacientes_orden[] pacientes_orden = new pacientes_orden[100];
     VectorHeap<pacientes_orden> priorityQueue = new VectorHeap<pacientes_orden>();
-            }
+
+    public int compareTo(int k) {
+        System.out.println(VectorHeap.parent(k));
+        return VectorHeap.parent(k);
+
+    }
+
+}
